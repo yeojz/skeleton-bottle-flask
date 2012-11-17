@@ -1,0 +1,99 @@
+/*
+Title: Fusedthought Premise Theme
+Version: 0.1
+*/
+.clear{clear: both;}
+
+body{background: #fff; text-align: center;}
+#top{position: relative; width: 90%; margin: 0 auto; text-align: left;}
+a{color: #d00;}
+a:hover{color: #a00;}
+.btt{display: block;}
+
+header.main h1 img{width: 300px; height: 120px;}
+header.main h1 a{text-decoration: none;}
+
+footer.main{clear: both; margin-top: 2em; padding: 1em; text-align: center;}
+footer.main .btt{padding: 0.5em;}
+
+#intro{position: relative; font-size: 2.5em; font-weight: bold; margin-top: 2em;} 
+#intro .name, #intro .domain span{color: #900; border-bottom: 2px #333 dotted;}
+#intro .prefix{display: block; }
+#intro .at{font-size: 1.2em; color: #333;}
+#intro .domain {color: #333;}
+	
+#byline{color: #333; font-size: 1em; font-weight: bold; margin: 3em 550px 1em 0; padding: 1em 5px; 
+border: 0px solid #333; border-width: 3px 0px 3px 0px; font-size: 0.8em;}
+
+#listing article .type, 
+#listing article .title, 
+#listing article .des, 
+#listing article .url{
+	font-size: 1.1em;}
+	
+#listing article .type:before, 
+#listing article .title:before, 
+#listing article .des:before, 
+#listing article .url:before{
+	font-weight: bold; margin-right: 1em; font-size: 0.9em;
+	display: block; color: #999;
+	}
+	
+	
+#listing article .type{font-weight: normal;}
+#listing article .type:before{content: 'Type: ';}	
+
+#listing article .title:before{content: 'Title: ';}	
+
+#listing article .des:before{content: 'Description: ';}	
+
+#listing article .url a{font-size: 1em;}
+#listing article .url:before{content: 'URL: '; display: inline;}	
+
+#listing article .screenshot{border: 1px #777 solid; text-align: center;
+	border-radius: 10px; overflow: hidden;
+	-moz-box-shadow: 5px 5px 5px #888;
+	-webkit-box-shadow: 5px 5px 5px #888;
+	box-shadow: 5px 5px 5px #888; 
+}
+#listing article .screenshot a{text-decoration: none;}
+
+
+
+
+
+
+
+@media only screen and (min-width: 1000px) {
+	#memage{position: absolute; top: 0; right: 0;background: url(images/2012-FusedthoughtHuman.png) top right no-repeat; height: 553px; width: 600px;}
+
+	#works{margin-top: 10em;}
+	#intro .intro-words{margin-right: 400px;}
+	
+	#listing article{position: relative; clear: both; font-size: 0.9em; margin: 10em 2em; display: block;}
+	#listing article .screenshot{width: 500px; height: 300px; float: left;  margin: 0 3em 10em 0;}
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 700px) and (max-width: 999px) {
+	#byline{margin-right: 0;}
+	#listing article{width: 45%; float: left; margin: 2%;}
+	#listing article:nth-child(odd){clear: both;}
+	#listing article .screenshot{width: 100%; height: 200px; }
+	#listing article .details{padding: 1em 1em 3em 1em;}
+}
+
+
+
+@media only screen and (max-width: 699px) {
+	#byline{margin-right: 0;}
+	#listing article .screenshot{width: 100%; height: 200px; }
+	#listing article .details{padding: 1em 1em 5em 1em;}
+}	
